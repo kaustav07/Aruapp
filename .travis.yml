@@ -1,47 +1,47 @@
 language: android
 sudo: required
 jdk: oraclejdk8
-
 env:
   global:
   - ANDROID_API=28
   - EMULATOR_API=21
   - ANDROID_BUILD_TOOLS=24.0.2
-  - ADB_INSTALL_TIMEOUT=5 # minutes
-  - secure: "YLPT3ULW+RK/aRdpWNTL+yeKSI7529FPY9/t87QU91AinrDtzgxespXowmSLA6T2hXehAF/tY6iVDlWpqZt8YtfJAjG837Jo8ULbxqtOMbPdwVKRAbwEBHgSxPLQvOeqwhAtPqL4bT7JSgKYeBxyz8rR+vNAMeyxFqf9tv7vPpJxHqdIkqBTSt1e5aY4960DDdin+oEaQsFQKzQAYw/nO1YEQxTugsNkiWq1vdGZVVgz9z8sAQORn2IeskTz+8TO3vlLoyPlVQNMz3YnmwsDVp79IpzTI3UzVE1BSqJKVXWAJ5flDuqlEgdZXT1W6hLMnGnwQNWe9SurmVXGC2DXuqzj8nRs8UU/lfdcIbgyKIMgAYUgKPWv7pFS439OVnTbxRtDj0IPTGfuRU7SwZY6qd9GbhlI0HDt03twCDwZ9PISIwKnFMHM1Y3YesqNUpYBlOXdAuyEuQV8tEWCz43PBh/ta06BIDfOb5Go6c/kuqolooLol13Q47hgPxL365EiQIbDyMVsm+7Nf8Rhjhjp8HM7t21VwpXaoQaQPqhfKAy4BYd3Q74tUobn5iaPlBGVMAKUwB172uO2z2d7X9EzY1iv+IIqDTzKD8bhMtwFaJ8H6I8tRbkAf4gPkInD+qw+jaNMFIHc64CwpkutcigB8lg6LDPl7wZU6EleY50zbnI="
-  - secure: "BK20SGGg/jE3c0j4EUJhsw/LWsMkXUhkC8M/gsO1NQT1kjE5w2pTCjb9zx+6LF2zy8lLa3VnOoNBPmSR4z5RWGEMMZUFvWgd1FrJtwNWnBSHHrzAIfGrm81F6XTUwPe5WK3lk0EiMaA1Bb70U6Zs1re5xSXiQ+DuducHfeqjmcyWGKRAVP5RyBCMlKplhl8rInhJXsSawTrbdiFuZyCkzfxFGd90zx1WT+bwGLOmdyWQsCF82tjgm6Hi5G1rfJMHAFb7GsBJEVv203Le+PaLClg61n+ZLhRw6oGkEGf/8PJYQ1CV9/qP7iBLl5VCGVC+knfDqVFlcqCEFPfZx122N86L9rZNw8k6W+Uw5a/Zdw8CS1uuRwS6pwprcDSdnOTxgSc0MvyaSJ4hNNPcKRpjRv+jWWrkc9VlFffWynpxnh3iZyGu1QamI2QtaoqBjmi/BX+7aU/X0MXQ2AiE7cxg8mSJAJ33wfxAalgykc14lkdCPLSR2V7CwUuV4xiEW46o6OGugtY4ZhPH/oct73Rkhm2iko0Bg5uHxWKfADs5y54wcVu0waoKx8yy8Vv6FuREFA1sqecwK6HMe0iqQUiBsuR4nPUIGRSabWCE1LlylVj8Swu9ug/2as5yooGpkym3qgZEZOfUuaeIEass+UAfE3w/EajuC9D6mdC2A5J5Vvo="
+  - ADB_INSTALL_TIMEOUT=5
+  - secure: YLPT3ULW+RK/aRdpWNTL+yeKSI7529FPY9/t87QU91AinrDtzgxespXowmSLA6T2hXehAF/tY6iVDlWpqZt8YtfJAjG837Jo8ULbxqtOMbPdwVKRAbwEBHgSxPLQvOeqwhAtPqL4bT7JSgKYeBxyz8rR+vNAMeyxFqf9tv7vPpJxHqdIkqBTSt1e5aY4960DDdin+oEaQsFQKzQAYw/nO1YEQxTugsNkiWq1vdGZVVgz9z8sAQORn2IeskTz+8TO3vlLoyPlVQNMz3YnmwsDVp79IpzTI3UzVE1BSqJKVXWAJ5flDuqlEgdZXT1W6hLMnGnwQNWe9SurmVXGC2DXuqzj8nRs8UU/lfdcIbgyKIMgAYUgKPWv7pFS439OVnTbxRtDj0IPTGfuRU7SwZY6qd9GbhlI0HDt03twCDwZ9PISIwKnFMHM1Y3YesqNUpYBlOXdAuyEuQV8tEWCz43PBh/ta06BIDfOb5Go6c/kuqolooLol13Q47hgPxL365EiQIbDyMVsm+7Nf8Rhjhjp8HM7t21VwpXaoQaQPqhfKAy4BYd3Q74tUobn5iaPlBGVMAKUwB172uO2z2d7X9EzY1iv+IIqDTzKD8bhMtwFaJ8H6I8tRbkAf4gPkInD+qw+jaNMFIHc64CwpkutcigB8lg6LDPl7wZU6EleY50zbnI=
+  - secure: BK20SGGg/jE3c0j4EUJhsw/LWsMkXUhkC8M/gsO1NQT1kjE5w2pTCjb9zx+6LF2zy8lLa3VnOoNBPmSR4z5RWGEMMZUFvWgd1FrJtwNWnBSHHrzAIfGrm81F6XTUwPe5WK3lk0EiMaA1Bb70U6Zs1re5xSXiQ+DuducHfeqjmcyWGKRAVP5RyBCMlKplhl8rInhJXsSawTrbdiFuZyCkzfxFGd90zx1WT+bwGLOmdyWQsCF82tjgm6Hi5G1rfJMHAFb7GsBJEVv203Le+PaLClg61n+ZLhRw6oGkEGf/8PJYQ1CV9/qP7iBLl5VCGVC+knfDqVFlcqCEFPfZx122N86L9rZNw8k6W+Uw5a/Zdw8CS1uuRwS6pwprcDSdnOTxgSc0MvyaSJ4hNNPcKRpjRv+jWWrkc9VlFffWynpxnh3iZyGu1QamI2QtaoqBjmi/BX+7aU/X0MXQ2AiE7cxg8mSJAJ33wfxAalgykc14lkdCPLSR2V7CwUuV4xiEW46o6OGugtY4ZhPH/oct73Rkhm2iko0Bg5uHxWKfADs5y54wcVu0waoKx8yy8Vv6FuREFA1sqecwK6HMe0iqQUiBsuR4nPUIGRSabWCE1LlylVj8Swu9ug/2as5yooGpkym3qgZEZOfUuaeIEass+UAfE3w/EajuC9D6mdC2A5J5Vvo=
 android:
-   components:
-   - tools
-   - platform-tools
-   - build-tools-$ANDROID_BUILD_TOOLS
-   - android-$ANDROID_API
-   - android-$EMULATOR_API_LEVEL
-   - extra-google-m2repository
-   - extra-android-m2repository # for design library
-   - addon-google_apis-google-19 # google play services
-   - sys-img-armeabi-v7a-addon-google_apis-google-$ANDROID_API_LEVEL
-   - sys-img-armeabi-v7a-addon-google_apis-google-$EMULATOR_API_LEVEL
-   licenses:
-   - android-sdk-preview-license-.+
-   - android-sdk-license-.+
-   - google-gdk-license-.+
+  components:
+  - tools
+  - platform-tools
+  - build-tools-$ANDROID_BUILD_TOOLS
+  - android-$ANDROID_API
+  - android-$EMULATOR_API_LEVEL
+  - extra-google-m2repository
+  - extra-android-m2repository
+  - addon-google_apis-google-19
+  - sys-img-armeabi-v7a-addon-google_apis-google-$ANDROID_API_LEVEL
+  - sys-img-armeabi-v7a-addon-google_apis-google-$EMULATOR_API_LEVEL
+  licenses:
+  - android-sdk-preview-license-.+
+  - android-sdk-license-.+
+  - google-gdk-license-.+
 before_install:
-   - openssl aes-256-cbc -K $encrypted_0dc1b6da88fb_key -iv $encrypted_0dc1b6da88fb_iv -in arukeystore.enc -out arukeystore.jks -d
-   - mkdir "$ANDROID_HOME/licenses" || true
-   - echo -e "\n8933bad161af4178b1185d1a37fbf41ea5269c55" > "$ANDROID_HOME/licenses/android-sdk-license"
-   - echo -e "\n84831b9409646a918e30573bab4c9c91346d8abd" > "$ANDROID_HOME/licenses/android-sdk-preview-license"
-   - chmod +x gradlew
-   - ./gradlew dependencies || true
+- openssl aes-256-cbc -K $encrypted_0dc1b6da88fb_key -iv $encrypted_0dc1b6da88fb_iv
+  -in arukeystore.enc -out arukeystore -d
+- mkdir "$ANDROID_HOME/licenses" || true
+- echo -e "\n8933bad161af4178b1185d1a37fbf41ea5269c55" > "$ANDROID_HOME/licenses/android-sdk-license"
+- echo -e "\n84831b9409646a918e30573bab4c9c91346d8abd" > "$ANDROID_HOME/licenses/android-sdk-preview-license"
+- chmod +x gradlew
+- "./gradlew dependencies || true"
 before_deploy:
-  - cp $TRAVIS_BUILD_DIR/.keystore $HOME
-  - cd app/build/outputs/apk/
-  - jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore $HOME/arukeystore.jks -storepass $storepass -keypass $keypass app-release-unsigned.apk kaustav
-  # Verification
-  - jarsigner -verify app-release-unsigned.apk
-  - "${ANDROID_HOME}/build-tools/24.0.2/zipalign -v 4 app-release-unsigned.apk aruapp.apk"
+- cp $TRAVIS_BUILD_DIR/.keystore $HOME
+- cd app/build/outputs/apk/
+- jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore $HOME/arukeystore.jks
+  -storepass $storepass -keypass $keypass app-release-unsigned.apk kaustav
+- jarsigner -verify app-release-unsigned.apk
+- "${ANDROID_HOME}/build-tools/24.0.2/zipalign -v 4 app-release-unsigned.apk aruapp.apk"
 deploy:
   provider: testfairy
-  api-key: "7102da07989e994163dfff83fa3376e91e8714cd"
+  api-key: 7102da07989e994163dfff83fa3376e91e8714cd
   app-file: app/build/outputs/apk/aruapp.apk
   notify: true
