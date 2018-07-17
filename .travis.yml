@@ -16,6 +16,8 @@ android:
   - android-$EMULATOR_API_LEVEL
   - extra-google-m2repository
   - extra-android-m2repository
+  - extra-android-support
+  - extra-google-google_play_services
 
   licenses:
    - android-sdk-preview-license-.+
